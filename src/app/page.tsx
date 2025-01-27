@@ -13,7 +13,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>See your changes instantly.</li>
+          <li>See your changes instantly on the database.</li>
         </ol>   
       </main>
     </div>
