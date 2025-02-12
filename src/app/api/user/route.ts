@@ -1,7 +1,7 @@
 import dbConnect from "@/app/utils/mongodb";
 import user from "../../model/user";
 
-export async function POST(request: Request) {
+export async function GET(request: Request) {
   try {
     await dbConnect();
     console.log("Webhook received!");
