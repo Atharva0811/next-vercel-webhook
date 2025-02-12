@@ -5,9 +5,8 @@ export async function POST(request: Request) {
   try {
     await dbConnect();
     const body = await request.json();
-    
-    console.log(body, "Webhook recieved");
-    await user.create({ name: JSON.stringify(body)});
+    console.log("Webhook received");
+    await user.create({ name: JSON.stringify(body) });
     // Process the webhook payload
   } catch (error) {
     return new Response(`Webhook error: ${error}`, {
